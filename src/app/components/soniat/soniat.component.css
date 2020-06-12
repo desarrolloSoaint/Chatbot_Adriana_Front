@@ -33,7 +33,7 @@
 }
 #chatbothead{
     grid-area:headchat;
-    background-color: #006595;
+    background-color: #7c9632;
     border-radius: 15px 15px 0 0;
     justify-content: space-between;
     align-items: center;
@@ -74,8 +74,8 @@
     background-color: transparent;
 }
 #btn{
-    color: #006595;
-    padding-left: 50px;
+    color: #7c9632;;
+    padding-left: 60px;
     background: transparent;
     border: 0;
 }
@@ -100,7 +100,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     top: 50% !important;
   }
   #btn{
-      color: #006595;
       padding-left: 10px;
       background: transparent;
       border: 0;
@@ -126,8 +125,7 @@ and (-webkit-min-device-pixel-ratio: 2){
     padding: 5px !important;
     top: 70% !important;
   }
-  #btn{
-      color: #006595;
+  #btn{  
       padding-left: 20px;
       background: transparent;
       border: 0;
@@ -146,7 +144,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     top: 80% !important;
   }
   #btn{
-    color: #006595;
     padding-left: 20px;
     background: transparent;
     border: 0;

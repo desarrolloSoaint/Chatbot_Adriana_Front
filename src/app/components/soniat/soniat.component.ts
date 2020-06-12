@@ -22,14 +22,15 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
   soniatForm: FormGroup;
   messages: Message[] = [];
   mostrar: boolean = false;
+  tittleChatBox:string="ADRIANA";
 
-  constructor(private formBuilder: FormBuilder, private router: Router, private apiService: ApiService) { };
+  constructor(private formBuilder: FormBuilder, private router: Router, private apiService: ApiService) { }
 
   ngOnInit() {
     this.soniatForm = this.formBuilder.group({
       message: ['', Validators.required]
     })
-    this.saveMessage("Hola me llamo SONIAT y seré tu asesor tecnológico durante la consulta, por favor coméntame ¿De que país nos escribes?",false)
+    this.saveMessage("Hola me llamo ADRIANA y seré tu asesor tecnológico durante la consulta, por favor coméntame ¿En qué puedo ayudarte?",false)
   }
   ngAfterViewInit(){
     this.scrollToBottom();
@@ -53,9 +54,9 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
     const question = this.soniatForm.controls.message.value;
     if (question != null) {
       this.saveMessage(question, true);
-      this.apiService.extractToken().subscribe((data: String) => {
+      this.apiService.extractToken().subscribe((data: string) => {
         //el subscribe tiene varias funciones (success, error)
-        this.apiService.getAnswer(question, data).subscribe((response: String) => {
+        this.apiService.getAnswer(question, data).subscribe((response: string) => {
           this.saveMessage(response, false); 
         }, error => {
         })
@@ -63,7 +64,7 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
       });
     }
   }
-  saveMessage(question: String, userMessage: boolean): void {
+  saveMessage(question: string, userMessage: boolean): void {
     this.messages.push({
       userMessage: userMessage,
       value: question
