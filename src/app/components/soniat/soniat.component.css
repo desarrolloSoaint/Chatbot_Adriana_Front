@@ -83,21 +83,19 @@
     font-size: 1.5rem;
 }
 .img_size{
-    width: 35%;
+    width: 30%;
     height: 30%;
     margin-top: 75%;
+    margin-left: 60%;
 }
 @media only screen and (min-device-width: 320px) 
 and (max-device-width: 340px) 
 and (-webkit-min-device-pixel-ratio: 2){
   #chatbotarea{
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:"chatarea";
-  }
-  #footer{
-    padding: 5px !important;
-    top: 50% !important;
+    width: 100%;
   }
   #btn{
       padding-left: 10px;
@@ -108,6 +106,9 @@ and (-webkit-min-device-pixel-ratio: 2){
       width: 75%;
       height: 95%;
   }
+  .img_size{
+    margin-left: 50%;
+  }
 }
 @media only screen and (min-device-width: 350px) 
 and (max-device-width: 370px) 
@@ -116,38 +117,46 @@ and (-webkit-min-device-pixel-ratio: 2){
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:"chatarea";
+    width: 100%;
   }
   #chatbot{   
       width: 75%;
       height: 95%;
-  }
-  #footer{
-    padding: 5px !important;
-    top: 70% !important;
   }
   #btn{  
       padding-left: 20px;
       background: transparent;
       border: 0;
   }
+  .img_size{
+    margin-left: 70%;
+  }
 }
 @media only screen and (min-device-width: 375px) 
+and (max-device-width: 420px) 
+and (-webkit-min-device-pixel-ratio: 2){
+  #chatbotarea{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"chatarea";
+    width: 110%;
+  }
+  .img_size{
+    margin-left: 60%;
+  }
+}
+@media only screen and (min-device-width: 425px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2){
   #chatbotarea{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:"chatarea";
+    width: 120%;
   }
-  #footer{
-    padding: 5px !important;
-    top: 80% !important;
+  .img_size{
+    margin-top: 65%;
   }
-  #btn{
-    padding-left: 20px;
-    background: transparent;
-    border: 0;
-  }  
 }
 @media only screen and (max-device-width: 700px){
   #chatbotarea{
@@ -155,8 +164,4 @@ and (-webkit-min-device-pixel-ratio: 2){
     grid-template-rows: 1fr;
     grid-template-areas:"chatarea";
   }
-  #footer{
-      padding: 5px;
-      top: 67%;
-    }
 }
