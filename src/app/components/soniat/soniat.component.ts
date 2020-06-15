@@ -30,7 +30,7 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
     this.soniatForm = this.formBuilder.group({
       message: ['', Validators.required]
     })
-    this.saveMessage("Hola me llamo ADRIANA y seré tu asesor tecnológico durante la consulta, por favor coméntame ¿En qué puedo ayudarte?",false)
+    this.saveMessage("Hola me llamo ADRIANA y seré tu asesor rural durante la consulta, por favor coméntame ¿En qué puedo ayudarte?",false)
   }
   ngAfterViewInit(){
     this.scrollToBottom();

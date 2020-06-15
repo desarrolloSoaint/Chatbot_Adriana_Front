@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 105%;
 }
 #chatbot{   
     width: 90%;
@@ -72,21 +73,20 @@
     outline: 0;
     border: 0;
     background-color: transparent;
+    width: 80%;
 }
 #btn{
-    color: #7c9632;;
-    padding-left: 60px;
+    color: #7c9632;
     background: transparent;
     border: 0;
 }
 .fa-2x {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .img_size{
-    width: 30%;
     height: 30%;
     margin-top: 75%;
-    margin-left: 60%;
+    margin-left: 80%;
 }
 @media only screen and (min-device-width: 320px) 
 and (max-device-width: 340px) 
@@ -97,11 +97,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     grid-template-areas:"chatarea";
     width: 100%;
   }
-  #btn{
-      padding-left: 10px;
-      background: transparent;
-      border: 0;
-  }
   #chatbot{   
       width: 75%;
       height: 95%;
@@ -111,28 +106,23 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
 }
 @media only screen and (min-device-width: 350px) 
-and (max-device-width: 370px) 
+and (max-device-width: 375px) 
 and (-webkit-min-device-pixel-ratio: 2){
   #chatbotarea{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:"chatarea";
-    width: 100%;
+    width: 107%;
   }
   #chatbot{   
       width: 75%;
       height: 95%;
   }
-  #btn{  
-      padding-left: 20px;
-      background: transparent;
-      border: 0;
-  }
   .img_size{
-    margin-left: 70%;
+    margin-left: 60%;
   }
 }
-@media only screen and (min-device-width: 375px) 
+@media only screen and (min-device-width: 376px) 
 and (max-device-width: 420px) 
 and (-webkit-min-device-pixel-ratio: 2){
   #chatbotarea{
@@ -142,7 +132,7 @@ and (-webkit-min-device-pixel-ratio: 2){
     width: 110%;
   }
   .img_size{
-    margin-left: 60%;
+    margin-left: 80%;
   }
 }
 @media only screen and (min-device-width: 425px) 
@@ -156,6 +146,7 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
   .img_size{
     margin-top: 65%;
+    margin-left: 70%;
   }
 }
 @media only screen and (max-device-width: 700px){

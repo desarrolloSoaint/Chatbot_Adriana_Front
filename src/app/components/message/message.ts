@@ -1,4 +1,4 @@
 export default interface Message{ 
     userMessage:boolean;
-    value: String;
+    value: string;
 }

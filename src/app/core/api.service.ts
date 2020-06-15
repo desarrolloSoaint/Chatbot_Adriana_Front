@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ConfigService } from '../configuration/config.service';
 
-const baseUrl = 'https://soniatback.herokuapp.com/api/v1';
+const baseUrl = 'https://adriana-bot.herokuapp.com/api/v1';
+//const baseUrl = 'https://soniatback.herokuapp.com/api/v1';
 //const baseUrl = 'http://localhost:8080/api/v1';
 
 let headers: any;
@@ -26,7 +27,7 @@ export class ApiService {
     return this.http.post(baseUrl + '/bot/login', parametros, {headers, responseType: 'text'});
   }
 
-  getAnswer(mensaje: String, token: String) {
+  getAnswer(mensaje: string, token: string) {
     headers = {
       'Authorization': 'Bearer ' + token,
       'Access-Control-Allow-Origin': '*',

@@ -1,7 +1,7 @@
 .chatmessage{
     background-color: #363636;
     color:white;
-    padding: 1rem;
+    padding: 0.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -23,13 +23,13 @@
   }
 .imgbot{
   background-repeat: no-repeat;
-  width: 15%;
+  width: 10%;
   height: 10%;
   border-radius: 100%;
 }
 .imguser{
   background-repeat: no-repeat;
-    width: 15%;
+    width: 10%;
     height: 10%;
     border-radius: 100%;
 }
